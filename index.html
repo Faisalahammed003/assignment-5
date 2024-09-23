@@ -14,34 +14,42 @@
   <body>
     <main class="container mx-auto">
       <!-- nav bar start -->
-      <nav class="flex justify-between mt-4">
-        <div>
-          <button class="btn hover:bg-[#B4F461] bg-[#B4F461] px-8 py-4">
-            Blog
+      <section class="sticky top-0 bg-white">
+        <nav class="flex justify-between mt-4">
+          <div>
+            <button
+              id="blog-btn"
+              class="btn hover:bg-[#B4F461] bg-[#B4F461] px-8 py-4"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="flex">
+            <img class="size-8" src="./assets/logo.png" alt="" />Donate
+            Bangladesh
+          </div>
+          <div class="flex gap-1">
+            <img class="size-6" src="./assets/coin.png" alt="" />
+
+            <span id="account-tk">5500</span>BDT
+          </div>
+        </nav>
+        <!-- nav bar end -->
+        <div class="flex justify-center mt-8 gap-3">
+          <button
+            id="donation-btn"
+            class="px-7 bg-[#B4F461] hover:bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            Donation
+          </button>
+          <button
+            id="history-btn"
+            class="px-8 bg-white hover:bg-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            History
           </button>
         </div>
-        <div class="flex">
-          <img class="size-8" src="./assets/logo.png" alt="" />Donate Bangladesh
-        </div>
-        <div class="flex gap-1">
-          <img class="size-6" src="./assets/coin.png" alt="" /><span>5550</span
-          >BDT
-        </div>
-      </nav>
-      <!-- nav bar end -->
-      <div class="flex justify-center mt-8 gap-3">
-        <button
-          class="px-7 bg-white hover:bg-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
-        >
-          Donation
-        </button>
-        <button
-          class="px-8 bg-white hover:bg-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
-        >
-          History
-        </button>
-      </div>
-
+      </section>
       <section>
         <!-- card section 1-->
         <div class="mt-6 sm:grid grid-cols-2">
@@ -51,7 +59,9 @@
           <div class="ml-5">
             <!-- coin part-->
             <div class="flex gap-1">
-              <img class="size-6" src="/assets/coin.png" alt="" /><span>0</span
+              <img class="size-6" src="/assets/coin.png" alt="" /><span
+                id="noakhali-screen"
+                >0</span
               >BDT
             </div>
             <h2 class="text-lg font-bold">
@@ -68,12 +78,14 @@
               </p></small
             >
             <input
+              id="noakhali-input"
               class="py-4 pr-36"
               placeholder="Write Donation Amount"
               type="text"
             />
             <br />
             <button
+              id="noakhali-btn"
               class="bg-[#B4F461] hover:bg-[#B4F461] px-32 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
             >
               Donate Now
@@ -162,6 +174,9 @@
           </div>
         </div>
       </section>
+      <!-- Java Script Link -->
+      <script src="./js/index.js"></script>
+      <script src="./js/utilities.js"></script>
     </main>
   </body>
 </html>
