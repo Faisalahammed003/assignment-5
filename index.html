@@ -50,7 +50,7 @@
           </button>
         </div>
       </section>
-      <section>
+      <section id="card">
         <!-- card section 1-->
         <div class="mt-6 sm:grid grid-cols-2">
           <!-- img part -->
@@ -101,7 +101,9 @@
           <div class="ml-5">
             <!-- coin part-->
             <div class="flex gap-1">
-              <img class="size-6" src="/assets/coin.png" alt="" /><span>0</span
+              <img class="size-6" src="/assets/coin.png" alt="" /><span
+                id="feni-screen"
+                >0</span
               >BDT
             </div>
             <h2 class="text-lg font-bold">
@@ -120,12 +122,14 @@
               </p></small
             >
             <input
+              id="feni-input"
               class="py-4 pr-36"
               placeholder="Write Donation Amount"
               type="text"
             />
             <br />
             <button
+              id="feni-btn"
               class="bg-[#B4F461] hover:bg-[#B4F461] px-32 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
             >
               Donate Now
@@ -141,7 +145,9 @@
           <div class="ml-5">
             <!-- coin part-->
             <div class="flex gap-1">
-              <img class="size-6" src="/assets/coin.png" alt="" /><span>0</span
+              <img class="size-6" src="/assets/coin.png" alt="" /><span
+                id="quota-screen"
+                >0</span
               >BDT
             </div>
             <h2 class="text-lg font-bold">
@@ -161,12 +167,14 @@
               </p>
             </small>
             <input
+              id="quota-input"
               class="py-4 pr-36"
               placeholder="Write Donation Amount"
               type="text"
             />
             <br />
             <button
+              id="quota-btn"
               class="bg-[#B4F461] hover:bg-[#B4F461] px-32 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
             >
               Donate Now
@@ -177,6 +185,7 @@
       <!-- Java Script Link -->
       <script src="./js/index.js"></script>
       <script src="./js/utilities.js"></script>
+      <script src="./js/btn.js"></script>
     </main>
   </body>
 </html>
