@@ -8,11 +8,14 @@ const noakhaliBtn = document
     if (isNaN(input) || input <= 0) {
       alert("Invalid Donation amount");
       return;
+    } else {
+      alert("Donation successful!");
     }
+
     // show history
     const p = document.createElement("p");
     p.innerText = `${input} Taka is Donate for Flood at Noakhali, Bangladesh
-    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
+    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)`;
     document.getElementById("show-history").appendChild(p);
     // history end
 
@@ -30,7 +33,6 @@ const noakhaliBtn = document
       alert("Insufficient Balance, Please Add Money First!");
       return;
     }
-
     const accountScreen = accountTk - input;
     const allAmount = document.getElementById("account-tk");
     allAmount.innerText = accountScreen;
@@ -45,11 +47,13 @@ const feniBtn = document
     if (isNaN(input) || input <= 0) {
       alert("Invalid Donation amount");
       return;
+    } else {
+      alert("Donation successful!");
     }
     // show history
     const p = document.createElement("p");
     p.innerText = `${input} Taka is Donated for Flood Relief in Feni,Bangladesh
-    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
+    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)`;
     document.getElementById("show-history").appendChild(p);
     // history end
 
@@ -83,11 +87,13 @@ const quotaBtn = document
     if (isNaN(input) || input <= 0) {
       alert("Invalid Donation amount");
       return;
+    } else {
+      alert("Donation successful!");
     }
     // show history
     const p = document.createElement("p");
     p.innerText = `${input} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh
-    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
+    Date:  ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)`;
     document.getElementById("show-history").appendChild(p);
     // history end
 

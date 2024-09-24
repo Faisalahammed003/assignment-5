@@ -13,9 +13,6 @@ document.getElementById("donation-btn").addEventListener("click", function () {
   hideSectionById("History");
 });
 
-// color
-// bg-[#B4F461] hover:bg-[#B4F461]
-
 // HISTROY BTN COLOR
 document.getElementById("history-btn").addEventListener("click", function () {
   const HisBtn = document.getElementById("history-btn");
