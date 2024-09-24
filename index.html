@@ -14,7 +14,7 @@
   <body>
     <main class="container mx-auto">
       <!-- nav bar start -->
-      <section class="sticky top-0 bg-white">
+      <section class="sticky top-0 bg-white bg-opacity-85">
         <nav class="flex justify-between mt-4">
           <div>
             <button
@@ -31,7 +31,7 @@
           <div class="flex gap-1">
             <img class="size-6" src="./assets/coin.png" alt="" />
 
-            <span id="account-tk">5500</span>BDT
+            <span id="account-tk">50000</span>BDT
           </div>
         </nav>
         <!-- nav bar end -->
@@ -44,12 +44,15 @@
           </button>
           <button
             id="history-btn"
-            class="px-8 bg-white hover:bg-white btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            class="px-8 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
           >
             History
           </button>
         </div>
       </section>
+      <div id="History" class="hidden">
+        <h2 class="text-xl text-[#5ba000]" id="show-history"></h2>
+      </div>
       <section id="card">
         <!-- card section 1-->
         <div class="mt-6 sm:grid grid-cols-2">

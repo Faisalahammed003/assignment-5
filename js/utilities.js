@@ -8,9 +8,16 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-// btn color part
-// function showColor(id) {
+// // btn color remove
+// function removeColorById(id) {
 //   document
 //     .getElementById(id)
 //     .classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]");
+// }
+
+// // btn color add
+// function addColorById(id) {
+//   document
+//     .getElementById(id)
+//     .classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]");
 // }
